@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "https://chats-mocha.vercel.app",
+    origin: *,
     methods: ["GET", "POST"],
     credentials: true,
   },
@@ -21,7 +21,7 @@ const io = socketIo(server, {
 // Middleware
 app.use(
   cors({
-    origin: "https://chats-mocha.vercel.app",
+    origin: *,
     methods: ["GET", "POST"],
     credentials: true,
   })
