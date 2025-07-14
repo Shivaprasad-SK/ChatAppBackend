@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: *,
+    origin: "https://chat-zeta-red-76.vercel.app/",
     methods: ["GET", "POST"],
     credentials: true,
   },
