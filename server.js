@@ -32,7 +32,7 @@ app.use(express.json());
 (async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://Shiva:Shiva@cluster0.ci9ghf1.mongodb.net/Chat"
+      process.env.MONGODB_URI
     );
     console.log("MongoDB connected successfully");
   } catch (err) {
