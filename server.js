@@ -21,7 +21,7 @@ const io = socketIo(server, {
 // Middleware
 app.use(
   cors({
-    origin: *,
+    origin: "https://chat-zeta-red-76.vercel.app/",
     methods: ["GET", "POST"],
     credentials: true,
   })
